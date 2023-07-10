@@ -79,10 +79,14 @@ python src/agent/sales-report-agent.py
 
 ## 🔗 Useful Links
 
-- LangChain: https://python.langchain.com/docs/modules/agents/ (Source for snippets of code)
+- LangChain: https://python.langchain.com/docs/modules/agents/
 - ReAct Paper: https://arxiv.org/abs/2210.03629 
 - MRKL Paper: https://www.ai21.com/blog/jurassic-x-crossing-the-neuro-symbolic-chasm-with-the-mrkl-system
-- Self-ask with search: https://python.langchain.com/docs/modules/agents/agent_types/self_ask_with_search 
+- Self-ask with search Paper: https://python.langchain.com/docs/modules/agents/agent_types/self_ask_with_search 
+- BabyAGI: https://github.com/yoheinakajima/babyagi
+- Generative Agents Paper: https://arxiv.org/abs/2304.03442
+- Plan-and-solver Paper: https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting
+  
   
 
 ## 💌 Newsletter
