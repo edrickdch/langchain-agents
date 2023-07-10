@@ -1,0 +1,22 @@
+from langchain import LLMMathChain
+from langchain.chat_models import ChatOpenAI
+from langchain.tools import Tool
+from pydantic import BaseModel, Field
+
+
+class CalculatorInput(BaseModel):
+    question: str = Field()
+
+
+llm = ChatOpenAI(temperature=0)
+llm_math_chain = LLMMathChain(llm=llm, verbose=True)
+
+tools = [
+    Tool.from_function(
+        func=llm_math_chain.run,
+        name="Calculator",
+        description="useful for when you need to \
+            answer questions about math",
+        args_schema=CalculatorInput,
+    )
+]
